@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporizador de foco">
+  <title>Focustimer Darkmode</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>    
+  <main>
+    <div class="btnchange">
+      <button class="btnsun" id="botaotroca">
+        <img src="/imagesbtn/btnsun.svg" alt="botão para alterar para modo escuro" name="sol" id="sol">
+      </button>
+    </div>
+
+    <div class="btnchange hide">
+      <button class="btnmoon">
+        <img src="/imagesbtn/btnmoon.svg" alt="botão para alterar para modo claro">
+      </button>
+    </div>
+
+    <div class="screen1" style="display:none">
+      
+      <div class="container">
+      <div id="timer" style="color: white;">
+        <span class="minutes" id="num">25</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+      </div>
+      
+      <div id="buttons">
+        <button class="play" id="btnblack"> 
+          <img src="/imagesbtn/play2.svg" alt="botão de play">
+        </button>
+
+        <button class="stop">
+          <img src="/imagesbtn/stop2.svg" alt="botão de stop">
+        </button>
+
+        <button class="moreMinutes">
+          <img src="/imagesbtn/moreminutes2.svg" alt="botão de acrescentar minutos">
+        </button>
+
+        <button class="lessMinutes">
+          <img src="/imagesbtn/lessminutes2.svg" alt="botão de diminuir minutos">
+        </button>
+      </div>
+      </div>
+
+      <label for="volume2">Volume</label>
+      <input type="range" min="0" max="1" value="0.5" step="0.1" class="slider" id="volume2" name="volume2" >
+      <button id="somteste">Som Teste</button>
+
+      <div id="sounds">
+        <div id="forestcolor">
+        <button class="forest">
+          <img src="/imagescontrols/forest2.svg" alt="botão para som de floresta">
+          <label for="volume"></label>
+          <input type="range" min="0" max="1" value="0.5" step="0.1" class="slider" id="volume" name="volume" >
+        </button>
+        </div>
+
+        <div id="raincolor">
+        <button class="rain">
+          <img src="/imagescontrols/raing2.svg" alt="botão para som de chuva">
+          <input type="range" min="0" max="1" value="0.5" step="0.1" class="slider" id="volumerain" name="volumerain" >
+        </button>
+        </div>
+
+        <div id="coffeeshopcolor">
+        <button class="coffeeshop">
+          <img src="/imagescontrols/coffee2.svg" alt="botão para som de cafeteria">
+          <input type="range" min="0" max="100" value="50" class="slider">
+        </button>
+        </div>
+
+        <div id="fireplacecolor">
+        <button class="fireplace">
+          <img src="/imagescontrols/fireplace2.svg" alt="botão para som de lareira">
+          <input type="range" min="0" max="100" value="50" class="slider">
+        </button>
+      </div>
+
+      </div>
+    </div>
+
+    <div class="screen2">
+
+      <div class="container">
+        <div id="timer">
+          <span class="minutes2" id="num2">25</span>
+          <span>:</span>
+          <span class="seconds2" >00</span>
+        </div>
+        
+        <div id="buttons">
+          <button class="play" id="play2"> 
+            <img src="/imagesbtn/playimg.svg" alt="botão de play">
+          </button>
+  
+          <button class="stop" id="stop2">
+            <img src="/imagesbtn/stopimg.svg" alt="botão de stop">
+          </button>
+  
+          <button class="moreMinutes2">
+            <img src="/imagesbtn/moreminutesimg.svg" alt="botão de acrescentar minutos">
+          </button>
+  
+          <button class="lessMinutes2">
+            <img src="/imagesbtn/lessminutesimg.svg" alt="botão de diminuir minutos">
+          </button>
+        </div>
+        </div>
+  
+        <div id="sounds">
+          <div id="forestcolor2">
+          <button class="forest2">
+            <img src="/imagescontrols/forestimg.svg" alt="botão para som de floresta">
+            <input type="range" min="0" max="100" value="50" class="slider" >
+          </button>
+          </div>
+  
+          <div id="raincolor2">
+          <button class="rain2">
+            <img src="/imagescontrols/raingimg.svg" alt="botão para som de chuva">
+            <input type="range" min="0" max="100" value="50" class="slider">
+          </button>
+          </div>
+  
+          <div id="coffeeshopcolor2">
+          <button class="coffeeshop2">
+            <img src="/imagescontrols/coffeeimg.svg" alt="botão para som de cafeteria">
+            <input type="range" min="0" max="100" value="50" class="slider">
+          </button>
+          </div>
+  
+          <div id="fireplacecolor2">
+          <button class="fireplace2">
+            <img src="/imagescontrols/fireplaceimg.svg" alt="botão para som de lareira">
+            <input type="range" min="0" max="100" value="50" class="slider">
+          </button>
+          </div>
+        </div>
+      </div>
+   
+  </main>
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>

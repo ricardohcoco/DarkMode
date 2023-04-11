@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62,5%;
+  --bg-color: #ffffff;
+  --text-color: #323238;
+  --cards-color: #E1E1E6; 
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color)
+}
+
+.btnchange {
+  float: right;
+  padding-top: 4rem;
+  padding-right: 6rem;
+}
+
+.screen1 {
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  gap: 19.2rem;
+  width: 82.1rem;
+  height: 33.6rem; 
+  padding-top: 9.2rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 2.4rem;
+}
+
+.forest,
+.rain,
+.coffeeshop,
+.fireplace {
+  background-color: #29292E;
+  justify-content: center;
+  align-items: center;
+  height: 9.5rem;
+  width: 8.5rem;
+  border-radius: 2.4rem;
+
+}
+
+.coffeeshop input,
+.forest input,
+.rain input,
+.fireplace input {
+  display: grid;
+  margin-top: 1.5rem;
+  margin-left: 2.2rem;
+  align-items: center;
+  -webkit-appearance: none;
+	width: 4rem;
+	height: 0.3rem;
+	border-radius: 0.5rem;
+  background-color: white;
+	outline: none;
+}
+
+.coffeeshop2 input,
+.forest2 input,
+.rain2 input,
+.fireplace2 input {
+  display: grid;
+  margin-top: 1.5rem;
+  margin-left: 2.2rem;
+  align-items: center;
+  -webkit-appearance: none;
+	width: 4rem;
+	height: 0.3rem;
+	border-radius: 0.5rem;
+  background-color: #323238;
+	outline: none;
+}
+
+
+.container {
+  display: grid;
+}
+
+#timer {
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+  display: flex;
+}
+
+#buttons {
+  display: flex;
+  gap: 3.2rem;
+}
+
+#sounds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3.2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.screen2 {
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  gap: 19.2rem;
+  width: 82.1rem;
+  height: 33.6rem; 
+  padding-top: 9.2rem;
+}
+
+
+.forest2,
+.rain2,
+.coffeeshop2,
+.fireplace2 {
+  background-color: var(--cards-color);
+  justify-content: center;
+  align-items: center;
+  height: 9.5rem;
+  width: 8.5rem;
+  border-radius: 2.4rem;
+}
